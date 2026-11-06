@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>localistアカウント - Deep Navi</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+  <a href="./index.html" class="back-button">←</a>
+  <h1>localistアカウント</h1>
+  <a href="./account.html" class="header-icon">
+    <img src="./images/icon-settings.png" alt="設定" onerror="this.outerHTML='⚙️'">
+  </a>
+</header>
+    <main class="app-content">
+      <div style="text-align: center; margin-bottom: 24px;">
+  <div class="img-box" style="width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 12px; background-color: #e0e0e0;">
+    <img src="./images/icon-user.png" alt="ユーザー" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+    <span class="img-placeholder-text" style="font-size: 24px;">👤</span>
+  </div>
+</div>
+
+<form onsubmit="alert('登録が完了しました'); return false;">
+  <div class="form-group">
+    <label>メールアドレス</label>
+    <input type="email" class="form-control" value="sample_user@example.com" placeholder="メールアドレスを入力">
+  </div>
+  <div class="form-group">
+    <label>パスワード</label>
+    <input type="password" class="form-control" value="••••••••" placeholder="パスワードを入力">
+  </div>
+  <div class="form-group">
+    <label>ニックネーム</label>
+    <input type="text" class="form-control" value="利用者A" placeholder="ニックネームを入力">
+  </div>
+  <button type="submit" class="btn btn-primary" style="margin-top: 20px;">登録</button>
+</form>
+    </main>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

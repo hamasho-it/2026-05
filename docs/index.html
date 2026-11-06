@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ディープナビ - Deep Navi</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+  <a href="./account.html" class="header-icon" title="アカウント">
+    <img src="./images/icon-user.png" alt="ユーザー" onerror="this.outerHTML='👤'">
+  </a>
+  <h1>ディープナビ</h1>
+  <a href="./account.html" class="header-icon" title="設定">
+    <img src="./images/icon-settings.png" alt="設定" onerror="this.outerHTML='⚙️'">
+  </a>
+</header>
+    <main class="app-content">
+      <div class="btn-grid">
+  <a href="./search.html" class="btn btn-card">トラベルボタン</a>
+  <a href="./posts.html" class="btn btn-card">地元民の声</a>
+  <a href="./subscription.html" class="btn btn-card">サブスク加入</a>
+  <a href="#" class="btn btn-card" onclick="alert('お問い合わせ機能は未実装です'); return false;">お問い合わせ</a>
+</div>
+    </main>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

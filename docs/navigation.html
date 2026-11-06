@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ナビ画面 - Deep Navi</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+  <a href="./search.html" class="back-button">←戻る</a>
+  <h1>ルート案内</h1>
+  <div style="width:28px;"></div>
+</header>
+    <main class="app-content">
+      <div style="background-color: #f5f5f5; border: 1px solid #ddd; border-radius: 8px; padding: 12px; margin-bottom: 12px;">
+  <div style="font-size: 12px; color: #666; margin-bottom: 4px;">案内パネル</div>
+  <div style="font-weight: bold; font-size: 14px;">目的地「夕日パーク」へ移動中 (残り 350m)</div>
+</div>
+
+<div class="map-container" style="min-height: 360px;">
+  <img src="./images/map-navigation.png" alt="ナビ地図" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+  <div class="img-placeholder-text" style="font-size: 16px; text-align: center;">
+    [ ナビ地図表示 ]<br>🔵 現在地 ➔ 🔴 目的地
+  </div>
+</div>
+
+<div style="margin-top: 16px;">
+  <a href="./arrival.html" class="btn btn-primary">（デモ）目的地に到着する</a>
+</div>
+    </main>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
