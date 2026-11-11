@@ -3,50 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>地元民の声 - Deep Navi</title>
+  <title>地元民の声</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div class="app-container">
+  <div class="app-viewport">
     <header class="app-header">
-  <a href="./index.html" class="back-button">←</a>
-  <h1>地元民の声</h1>
-  <div style="width:28px;"></div>
-</header>
+      <a href="./index.html" class="back-btn-fixed">戻る</a>
+      <h1 class="app-title" style="margin-left: auto; margin-right: auto;">地元民の声</h1>
+    </header>
+
     <main class="app-content">
-      <div class="search-bar-container">
-  <img src="./images/icon-menu.png" alt="メニュー" style="width: 20px; height: 20px;" onerror="this.outerHTML='☰'">
-  <input type="text" class="search-input" placeholder="検索">
-  <img src="./images/icon-search.png" alt="検索" style="width: 20px; height: 20px;" onerror="this.outerHTML='🔍'">
-</div>
+      <div class="search-bar">
+        <img src="./images/icon-menu.png" alt="メニュー" style="width:22px; margin-right:8px;" onerror="this.style.display='none'">
+        <input type="text" class="search-input" placeholder="キーワード検索">
+        <img src="./images/icon-search.png" alt="検索" style="width:22px;" onerror="this.style.display='none'">
+      </div>
 
-<div class="post-card">
-  <div class="post-img">
-    <img src="./images/post-sample1.png" alt="投稿1" style="width:100%; height:100%; object-fit:cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-    <span class="img-placeholder-text">post-sample1</span>
-  </div>
-  <div class="post-content">
-    <p style="font-size: 14px; line-height: 1.4; color: #333;">【サンプル町1-1】 夕方が特におすすめの絶景スポットです！</p>
-    <div class="post-action-bar">
-      <a href="./favorites.html" class="post-action-btn">♡コメント</a>
-      <a href="./favorites.html" class="post-action-btn">保存</a>
-    </div>
-  </div>
-</div>
+      <div class="post-card">
+        <div class="img-container" style="height: 170px; border: none;">
+          <img src="./images/post-sample1.png" alt="投稿1写真" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="img-fallback" style="height:100%; width:100%; display:none;">📸 【サンプル町1-1】投稿写真</div>
+        </div>
+        <div class="post-card-body">
+          <p style="font-size: 15px; font-weight: bold; color: var(--text-dark);">【サンプル町1-1】 夕方が特におすすめの絶景スポットです！</p>
+          <div class="post-actions">
+            <a href="./favorites.html" class="post-action-btn">♡コメント</a>
+            <a href="./favorites.html" class="post-action-btn">保存</a>
+          </div>
+        </div>
+      </div>
 
-<div class="post-card">
-  <div class="post-img">
-    <img src="./images/post-sample2.png" alt="投稿2" style="width:100%; height:100%; object-fit:cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-    <span class="img-placeholder-text">post-sample2</span>
-  </div>
-  <div class="post-content">
-    <p style="font-size: 14px; line-height: 1.4; color: #333;">【サンプル商店】 地元の人が通う隠れた名物食堂。</p>
-    <div class="post-action-bar">
-      <a href="./favorites.html" class="post-action-btn">♡コメント</a>
-      <a href="./favorites.html" class="post-action-btn">保存</a>
-    </div>
-  </div>
-</div>
+      <div class="post-card">
+        <div class="img-container" style="height: 170px; border: none;">
+          <img src="./images/post-sample2.png" alt="投稿2写真" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="img-fallback" style="height:100%; width:100%; display:none;">📸 【サンプル商店】投稿写真</div>
+        </div>
+        <div class="post-card-body">
+          <p style="font-size: 15px; font-weight: bold; color: var(--text-dark);">【サンプル商店】 地元の人が通う隠れた名物食堂。</p>
+          <div class="post-actions">
+            <a href="./favorites.html" class="post-action-btn">♡コメント</a>
+            <a href="./favorites.html" class="post-action-btn">保存</a>
+          </div>
+        </div>
+      </div>
     </main>
   </div>
   <script src="./script.js"></script>

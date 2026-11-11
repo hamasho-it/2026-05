@@ -3,27 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>目的地到着後のナビ終了画面 - Deep Navi</title>
+  <title>ナビ終了</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div class="app-container">
+  <div class="app-viewport">
     <header class="app-header">
-  <div style="width:28px;"></div>
-  <h1>ナビ終了</h1>
-  <div style="width:28px;"></div>
-</header>
-    <main class="app-content">
-      <div style="text-align: center; margin: 40px 0 30px;">
-  <div style="font-size: 48px; margin-bottom: 16px;">🏁</div>
-  <h2 style="font-size: 20px; font-weight: bold; margin-bottom: 8px;">目的地に到着しました！</h2>
-  <p style="font-size: 14px; color: #666;">夕日パークへの案内が完了しました。</p>
-</div>
+      <a href="./index.html" class="back-btn-fixed">戻る</a>
+      <h1 class="app-title" style="margin-left: auto; margin-right: auto;">ナビ終了</h1>
+    </header>
 
-<div style="display: flex; flex-direction: column; gap: 12px;">
-  <a href="./favorites.html" class="btn">ルートを保存する</a>
-  <a href="./evaluation.html" class="btn btn-primary">評価に進む</a>
-</div>
+    <main class="app-content" style="justify-content: center; text-align: center;">
+      <div style="font-size: 64px; margin-bottom: 12px;">🎉</div>
+      <h2 style="font-size: 24px; color: #FF2D55; margin-bottom: 14px; font-weight: 900;">目的地に到着しました！</h2>
+      <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 40px; line-height: 1.6; font-weight: 600;">ナビゲーションを終了します。<br>このルートを保存または評価できます。</p>
+
+      <div style="display: flex; flex-direction: column; gap: 16px; width: 100%;">
+        <a href="./favorites.html" class="btn-neon btn-gold">ルートを保存する</a>
+        <a href="./evaluation.html" class="btn-neon">評価に進む</a>
+      </div>
     </main>
   </div>
   <script src="./script.js"></script>

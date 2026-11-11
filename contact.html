@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="app-viewport">
+    <header class="app-header">
+      <a href="./index.html" class="back-btn-fixed">戻る</a>
+      <h1 class="app-title" style="margin-left: auto; margin-right: auto;">お問い合わせ</h1>
+    </header>
+
+    <main class="app-content">
+      <form onsubmit="event.preventDefault();">
+        <div class="form-group">
+          <label class="form-label">お名前</label>
+          <input type="text" class="form-input" value="轟駆　雷名" placeholder="お名前を入力">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">メールアドレス</label>
+          <input type="email" class="form-input" value="sample_user@example.com" placeholder="メールアドレスを入力">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">お問い合わせ内容</label>
+          <textarea class="form-input" placeholder="お問い合わせ内容を入力してください">トイレに行きたい</textarea>
+        </div>
+
+        <button type="button" class="btn-neon" style="margin-top: 20px;">内容を送信</button>
+      </form>
+    </main>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -3,24 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>広告 - Deep Navi</title>
+  <title>広告</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div class="ad-fullscreen">
-    <a href="./navigation.html" class="ad-close-btn">閉じる</a>
-    
-    <div class="ad-banner-area">
-      <img src="./images/banner-ad.png" alt="広告" style="max-width: 100%; max-height: 100%; object-fit: contain;" onerror="this.style.display='none';">
-      <span class="ad-placeholder-text">広告</span>
-    </div>
+  <div class="app-viewport" style="background: linear-gradient(135deg, #FFF5F5, #FFEBF0);">
+    <header class="app-header" style="background: transparent; border: none; box-shadow: none;">
+      <a href="./navigation.html" class="back-btn-fixed">戻る</a>
+    </header>
 
-    <div>
-      <div class="progress-bar-bg">
-        <div class="progress-bar-fill"></div>
+    <main class="app-content" style="justify-content: space-between; align-items: center; text-align: center;">
+      <div style="margin-top: 30px; font-weight: 900; color: #FF2D55; font-size: 16px; letter-spacing: 1px;">📢 スポンサー広告</div>
+
+      <div class="img-container" style="width: 100%; height: 380px; border: 3px solid #FF9500; box-shadow: 0 10px 30px rgba(255, 149, 0, 0.3);">
+        <img src="./images/banner-ad.png" alt="広告バナー" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="img-fallback" style="height: 100%; width: 100%; display: none; font-size: 32px; font-weight: 900; color: #FF2D55;">
+          SPECIAL AD BANNER
+        </div>
       </div>
-      <div style="text-align: center; font-size: 11px; color: #888; margin-top: 6px;">広告表示中...</div>
-    </div>
+
+      <div style="width: 100%; margin-bottom: 30px;">
+        <div style="width: 100%; height: 8px; background: #E5E5EA; border-radius: 4px; overflow: hidden;">
+          <div style="width: 70%; height: 100%; background: var(--primary-grad);"></div>
+        </div>
+        <p style="font-size: 12px; color: var(--text-muted); margin-top: 10px; font-weight: bold;">読み込み中...</p>
+      </div>
+    </main>
   </div>
   <script src="./script.js"></script>
 </body>

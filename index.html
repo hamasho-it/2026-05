@@ -3,27 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ディープナビ - Deep Navi</title>
+  <title>ディープナビ - ホーム</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div class="app-container">
+  <div class="app-viewport">
     <header class="app-header">
-  <a href="./account.html" class="header-icon" title="アカウント">
-    <img src="./images/icon-user.png" alt="ユーザー" onerror="this.outerHTML='👤'">
-  </a>
-  <h1>ディープナビ</h1>
-  <a href="./account.html" class="header-icon" title="設定">
-    <img src="./images/icon-settings.png" alt="設定" onerror="this.outerHTML='⚙️'">
-  </a>
-</header>
-    <main class="app-content">
-      <div class="btn-grid">
-  <a href="./search.html" class="btn btn-card">トラベルボタン</a>
-  <a href="./posts.html" class="btn btn-card">地元民の声</a>
-  <a href="./subscription.html" class="btn btn-card">サブスク加入</a>
-  <a href="#" class="btn btn-card" onclick="alert('お問い合わせ機能は未実装です'); return false;">お問い合わせ</a>
-</div>
+      <a href="./account.html" style="display:flex; align-items:center;">
+        <img src="./images/icon-user.png" alt="プロフ" style="width:34px; height:34px; border-radius:50%;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="img-fallback" style="width:34px; height:34px; border-radius:50%; display:none; background:#FF2D55; color:#FFF;">👤</div>
+      </a>
+      <h1 class="app-title">ディープナビ</h1>
+      <a href="./account.html" style="display:flex; align-items:center;">
+        <img src="./images/icon-settings.png" alt="設定" style="width:30px; height:30px;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="img-fallback" style="width:30px; height:30px; border-radius:50%; display:none;">⚙️</div>
+      </a>
+    </header>
+
+    <main class="app-content" style="justify-content: center;">
+      <div style="text-align: center; margin-bottom: 28px;">
+        <p style="color: #FF5E36; font-weight: 800; font-size: 15px; letter-spacing: 0.5px;">地元の極上スポットへあなたをナビゲート</p>
+      </div>
+
+      <div class="menu-grid">
+        <a href="./search.html" class="menu-card">
+          <div class="menu-icon-wrapper">🧭</div>
+          <span>トラベルボタン</span>
+        </a>
+        <a href="./posts.html" class="menu-card">
+          <div class="menu-icon-wrapper">🗣️</div>
+          <span>地元民の声</span>
+        </a>
+        <a href="./subscription.html" class="menu-card">
+          <div class="menu-icon-wrapper">👑</div>
+          <span>サブスク加入</span>
+        </a>
+        <a href="./contact.html" class="menu-card">
+          <div class="menu-icon-wrapper">✉️</div>
+          <span>お問い合わせ</span>
+        </a>
+      </div>
     </main>
   </div>
   <script src="./script.js"></script>

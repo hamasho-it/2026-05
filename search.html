@@ -3,43 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>検索 - Deep Navi</title>
+  <title>検索</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div class="app-container">
+  <div class="app-viewport">
     <header class="app-header">
-  <a href="./index.html" class="back-button">←</a>
-  <h1>検索</h1>
-  <div style="width:28px;"></div>
-</header>
+      <a href="./index.html" class="back-btn-fixed">戻る</a>
+      <h1 class="app-title" style="margin-left: auto; margin-right: auto;">検索</h1>
+    </header>
+
     <main class="app-content">
-      <div class="search-bar-container">
-  <img src="./images/icon-menu.png" alt="メニュー" style="width: 20px; height: 20px;" onerror="this.outerHTML='☰'">
-  <input type="text" class="search-input" value="夕日パーク" placeholder="検索">
-  <img src="./images/icon-search.png" alt="検索" style="width: 20px; height: 20px;" onerror="this.outerHTML='🔍'">
-</div>
+      <div class="search-bar">
+        <img src="./images/icon-menu.png" alt="メニュー" style="width:22px; margin-right:8px;" onerror="this.style.display='none'">
+        <input type="text" class="search-input" value="夕日パーク" placeholder="スポットを検索">
+        <img src="./images/icon-search.png" alt="検索" style="width:22px;" onerror="this.style.display='none'">
+      </div>
 
-<a href="./ad.html" class="spot-card">
-  <div class="spot-card-header">
-    <div class="spot-card-img">
-      <img src="./images/spot-yuuhi.png" alt="夕日パーク" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-      <span class="img-placeholder-text">spot-yuuhi</span>
-    </div>
-    <div class="spot-card-info">
-      <div class="spot-title">夕日パーク</div>
-      <div class="spot-meta">営業時間 5:30〜10:00</div>
-      <div class="spot-meta">駐車場・トイレ・電話：24時間利用可能</div>
-    </div>
-  </div>
-</a>
+      <a href="./ad.html" style="text-decoration: none; color: inherit;">
+        <div style="background: #FFF; border-radius: var(--radius-lg); overflow: hidden; margin-bottom: 16px; border: 2px solid #00C7FF; box-shadow: var(--shadow-color);">
+          <div class="img-container" style="height: 150px; border: none;">
+            <img src="./images/spot-yuuhi.png" alt="夕日パーク" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-fallback" style="height: 100%; width: 100%; display: none;">🏞️ 夕日パーク サムネイル画像</div>
+          </div>
+          <div style="padding: 14px;">
+            <h3 style="font-size: 18px; color: #007AFF; margin-bottom: 6px; font-weight: bold;">夕日パーク</h3>
+            <p style="font-size: 13px; color: var(--text-muted); font-weight: 600;">営業時間 5:30〜10:00</p>
+            <p style="font-size: 13px; color: var(--text-muted); font-weight: 600;">駐車場・トイレ・電話：24時間利用可能</p>
+          </div>
+        </div>
+      </a>
 
-<div class="map-container">
-  <img src="./images/map-search.png" alt="検索地図" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-  <div class="img-placeholder-text" style="font-size: 16px; text-align: center;">
-    [ 地図領域 ]<br>📍 サンプル町1-1 (夕日パーク)
-  </div>
-</div>
+      <div class="img-container" style="flex: 1; min-height: 240px;">
+        <img src="./images/map-search.png" alt="検索地図" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="img-fallback" style="height: 100%; width: 100%; display: none; flex-direction: column;">
+          <span style="font-size: 36px;">🗺️</span>
+          <span>ピン付きエリア地図領域</span>
+        </div>
+      </div>
     </main>
   </div>
   <script src="./script.js"></script>

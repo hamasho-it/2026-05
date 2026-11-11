@@ -3,32 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>サブスク加入 - Deep Navi</title>
+  <title>サブスク加入</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div class="app-container">
+  <div class="app-viewport">
     <header class="app-header">
-  <a href="./index.html" class="back-button">←</a>
-  <h1>サブスク加入</h1>
-  <div style="width:28px;"></div>
-</header>
-    <main class="app-content">
-      <div style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 12px; background-color: #fafafa; margin-bottom: 24px;">
-  <h2 style="font-size: 16px; margin-bottom: 12px;">サブスク特典一覧</h2>
-  <ul style="padding-left: 20px; font-size: 14px; line-height: 1.8; color: #555;">
-    <li>1. 地元民しか知らない限定裏ルート表示</li>
-    <li>2. 広告非表示機能</li>
-    <li>3. 無制限ルート保存</li>
-  </ul>
-  <hr style="margin: 16px 0; border: none; border-top: 1px solid #e0e0e0;">
-  <div style="text-align: center; margin-top: 12px;">
-    <span style="font-size: 13px; color: #666;">コース名：ディープナビ プレミアム会員</span><br>
-    <span style="font-size: 22px; font-weight: bold; color: #111;">値段：月額 500円</span>
-  </div>
-</div>
+      <a href="./index.html" class="back-btn-fixed">戻る</a>
+      <h1 class="app-title" style="margin-left: auto; margin-right: auto;">サブスク加入</h1>
+    </header>
 
-<a href="#" class="btn btn-primary" onclick="alert('支払い手続きへ移行します'); return false;">支払い手続き移行ボタン</a>
+    <main class="app-content" style="justify-content: space-between;">
+      <div>
+        <div style="background: linear-gradient(135deg, #FFF9E6, #FFF5D6); border: 2px solid #FFCC00; border-radius: var(--radius-xl); padding: 24px; margin-top: 10px; box-shadow: 0 8px 25px rgba(255, 204, 0, 0.25);">
+          <h2 style="color: #FF9500; font-size: 20px; text-align: center; margin-bottom: 16px; font-weight: 900;">✨ プレミアム会員特典 ✨</h2>
+          <ul style="list-style: none; line-height: 2.2; font-size: 15px; color: #3A3A3C; font-weight: bold;">
+            <li>🌟 1. 地元民しか知らない限定裏ルート表示</li>
+            <li>🌟 2. 広告非表示機能</li>
+            <li>🌟 3. 無制限ルート保存</li>
+          </ul>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+          <p style="font-size: 15px; color: var(--text-muted); font-weight: bold;">ディープナビ プレミアムコース</p>
+          <p style="font-size: 42px; font-weight: 900; color: #FF2D55; text-shadow: 0 4px 12px rgba(255, 45, 85, 0.2);">月額 800円</p>
+        </div>
+      </div>
+
+      <div style="margin-bottom: 20px;">
+        <button type="button" class="btn-neon btn-gold">支払い手続き移行ボタン</button>
+      </div>
     </main>
   </div>
   <script src="./script.js"></script>

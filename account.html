@@ -3,41 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>localistアカウント - Deep Navi</title>
+  <title>localistアカウント</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div class="app-container">
+  <div class="app-viewport">
     <header class="app-header">
-  <a href="./index.html" class="back-button">←</a>
-  <h1>localistアカウント</h1>
-  <a href="./account.html" class="header-icon">
-    <img src="./images/icon-settings.png" alt="設定" onerror="this.outerHTML='⚙️'">
-  </a>
-</header>
-    <main class="app-content">
-      <div style="text-align: center; margin-bottom: 24px;">
-  <div class="img-box" style="width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 12px; background-color: #e0e0e0;">
-    <img src="./images/icon-user.png" alt="ユーザー" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-    <span class="img-placeholder-text" style="font-size: 24px;">👤</span>
-  </div>
-</div>
+      <a href="./index.html" class="back-btn-fixed">戻る</a>
+      <h1 class="app-title" style="margin-left: auto; margin-right: auto;">localistアカウント</h1>
+      <a href="./account.html">
+        <img src="./images/icon-settings.png" alt="設定" style="width:26px; height:26px;" onerror="this.style.display='none'">
+      </a>
+    </header>
 
-<form onsubmit="alert('登録が完了しました'); return false;">
-  <div class="form-group">
-    <label>メールアドレス</label>
-    <input type="email" class="form-control" value="sample_user@example.com" placeholder="メールアドレスを入力">
-  </div>
-  <div class="form-group">
-    <label>パスワード</label>
-    <input type="password" class="form-control" value="••••••••" placeholder="パスワードを入力">
-  </div>
-  <div class="form-group">
-    <label>ニックネーム</label>
-    <input type="text" class="form-control" value="利用者A" placeholder="ニックネームを入力">
-  </div>
-  <button type="submit" class="btn btn-primary" style="margin-top: 20px;">登録</button>
-</form>
+    <main class="app-content">
+      <div style="text-align: center; margin: 24px 0;">
+        <div style="width: 100px; height: 100px; margin: 0 auto; border-radius: 50%; overflow: hidden; border: 4px solid #FF2D55; box-shadow: 0 8px 25px rgba(255, 45, 85, 0.3);">
+          <img src="./images/icon-user.png" alt="アバター" style="width:100%; height:100%; object-fit:cover;" onerror="this.parentNode.innerHTML='<div class=\'img-fallback\' style=\'height:100%; font-size:45px;\'>👤</div>'">
+        </div>
+      </div>
+
+      <form onsubmit="event.preventDefault();">
+        <div class="form-group">
+          <label class="form-label">メールアドレス</label>
+          <input type="email" class="form-input" value="sample_user@example.com" placeholder="メールアドレスを入力">
+        </div>
+        <div class="form-group">
+          <label class="form-label">パスワード</label>
+          <input type="password" class="form-input" value="••••••••" placeholder="パスワードを入力">
+        </div>
+        <div class="form-group">
+          <label class="form-label">ニックネーム</label>
+          <input type="text" class="form-input" value="利用者A" placeholder="ニックネームを入力">
+        </div>
+
+        <button type="button" class="btn-neon" style="margin-top: 30px;">登録</button>
+      </form>
     </main>
   </div>
   <script src="./script.js"></script>
